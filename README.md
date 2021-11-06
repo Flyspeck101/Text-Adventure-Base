@@ -32,7 +32,7 @@ Commit your changes, and then go into `rooms.js`.
 
 In the object `rooms`, you can add as many rooms to the game as you like. The default room structure is as follows:
 
------------
+------|-----
 | Lab |    |
 | Hole |    |
 | Forest | Clearing |
