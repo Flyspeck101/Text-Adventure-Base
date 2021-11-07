@@ -50,6 +50,7 @@ function exit (direction) {
     return;
   }
   currentRoom = rooms[currentRoom].exits[direction].to;
+  notify(`You went ${direction}...`);
   refresh();
 };
 
