@@ -15,6 +15,8 @@ function refresh() {
     `;
   }
   
+  DOMString += "<br>";
+  
   for (const item in inventory) {
     DOMString += `<br>
     <br>
@@ -22,10 +24,12 @@ function refresh() {
     `;
   }
   
+  DOMString += "<br>";
+  
   for (const path in rooms[currentRoom].exits) {
     DOMString += `<br>
     <br>
-    <button id=${path} onclick="exit('${path}')">Go ${path}${rooms[currentRoom].exits[path].locked ? " (locked)" : ""}`;
+    <button id=${path} onclick="exit('${path}')">Go ${path}${rooms[currentRoom].exits[path].locked ? " (locked)" : ""}</button>`;
   }
   
   items.innerHTML = DOMString;
